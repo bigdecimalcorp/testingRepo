@@ -1,0 +1,377 @@
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  hsla(120,0%,49%,1) 0%, hsla(0,0%,5%,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  hsla(120,0%,49%,1) 0%,hsla(0,0%,5%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  hsla(120,0%,49%,1) 0%,hsla(0,0%,5%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+.menu {
+  -webkit-filter: url("#shadowed-goo");
+          filter: url("#shadowed-goo");
+}
+
+.menu-item, .menu-open-button {
+  background: #000;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+          transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+          transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+      position: absolute;
+    left: 14%;
+    margin-left: -190px;
+    padding-top: 20px;
+    padding-left: 190px;
+    width: 315px;
+    height: 242px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: left;
+}
+
+.menu-item:hover {
+  background: white;
+  color: #ff4081;
+}
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 70ms;
+          transition-duration: 70ms;
+}
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 130ms;
+          transition-duration: 130ms;
+}
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 190ms;
+          transition-duration: 190ms;
+}
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+.menu-item:nth-child(7) {
+  -webkit-transition-duration: 310ms;
+          transition-duration: 310ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+          transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+          transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  -webkit-transition-duration: 160ms;
+          transition-duration: 160ms;
+  -webkit-transform: translate3d(114.42548px, 11.48084px, 0);
+          transform: translate3d(114.42548px, 11.48084px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  -webkit-transition-duration: 240ms;
+          transition-duration: 240ms;
+  -webkit-transform: translate3d(77.18543px, 85.2491px, 0);
+          transform: translate3d(77.18543px, 85.2491px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  -webkit-transition-duration: 320ms;
+          transition-duration: 320ms;
+  -webkit-transform: translate3d(0.09158px, 114.99996px, 0);
+          transform: translate3d(0.09158px, 114.99996px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: translate3d(-77.04956px, 85.37192px, 0);
+          transform: translate3d(-77.04956px, 85.37192px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  -webkit-transition-duration: 480ms;
+          transition-duration: 480ms;
+  -webkit-transform: translate3d(-114.40705px, 11.66307px, 0);
+          transform: translate3d(-114.40705px, 11.66307px, 0);
+}
+body {
+  background: #000;
+}
+
+.artboard {
+  width: 800px;
+  height: 350px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.bat {
+  width: 800px;
+  height: 274px;
+  position: relative;
+  top: 38px;
+  margin: auto;
+  background: #292929;
+  background: -moz-linear-gradient(-45deg, #292929 0%, black 14%, #1a1a1a 26%, #111111 40%, #242424 63%, #1c1c1c 82%, #131313 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #292929), color-stop(14%, black), color-stop(26%, #1a1a1a), color-stop(40%, #111111), color-stop(63%, #242424), color-stop(82%, #1c1c1c), color-stop(100%, #131313));
+  background: -webkit-linear-gradient(-45deg, #292929 0%, black 14%, #1a1a1a 26%, #111111 40%, #242424 63%, #1c1c1c 82%, #131313 100%);
+  background: -o-linear-gradient(-45deg, #292929 0%, black 14%, #1a1a1a 26%, #111111 40%, #242424 63%, #1c1c1c 82%, #131313 100%);
+  background: -ms-linear-gradient(-45deg, #292929 0%, black 14%, #1a1a1a 26%, #111111 40%, #242424 63%, #1c1c1c 82%, #131313 100%);
+  background: linear-gradient(135deg, #292929 0%, black 14%, #1a1a1a 26%, #111111 40%, #242424 63%, #1c1c1c 82%, #131313 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#131313', GradientType=1 );
+}
+
+.headLeft-1 {
+  width: 87px;
+  height: 70px;
+  background: rgba(140, 0, 140, 0.4);
+  background: #000;
+  position: absolute;
+  top: 30px;
+  left: 276px;
+  border-radius: 20px 60px 76px 180px / 120px 120px 50px 150px;
+  transform: skew(20deg);
+}
+
+.headLeft-2 {
+  width: 32px;
+  height: 64px;
+  background: rgba(140, 0, 140, 0.4);
+  background: #000;
+  position: absolute;
+  top: 34px;
+  left: 342px;
+  border-radius: 20px 160px 148px 180px / 120px 20px 80px 100px;
+  transform: skew(-6deg);
+}
+
+.headRight-1 {
+  width: 87px;
+  height: 70px;
+  background: rgba(140, 0, 140, 0.4);
+  background: #000;
+  position: absolute;
+  top: 30px;
+  right: 276px;
+  border-radius: 60px 20px 180px 76px / 120px 120px 150px 50px;
+  transform: skew(-20deg);
+}
+
+.headRight-2 {
+  width: 32px;
+  height: 64px;
+  background: rgba(140, 0, 140, 0.4);
+  background: #000;
+  position: absolute;
+  top: 34px;
+  right: 342px;
+  border-radius: 160px 20px 180px 148px / 20px 120px 100px 80px;
+  transform: skew(6deg);
+}
+
+.topLeft {
+  width: 20px;
+  height: 42px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  top: 36px;
+  left: 378px;
+  transform: skew(15deg);
+}
+
+.topRight {
+  width: 20px;
+  height: 42px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  top: 36px;
+  right: 378px;
+  transform: skew(-15deg);
+}
+
+.centerGuide {
+  /* Guide DIV to center elements - display:none */
+  display: none;
+  width: 20px;
+  height: 60px;
+  background: rgba(200, 100, 250, 0.5);
+  position: relative;
+  top: -244px;
+  margin: auto;
+}
+
+.topFill {
+  width: 20px;
+  height: 42px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  top: 30px;
+  left: 390px;
+}
+
+.wingLeft-1 {
+  width: 180px;
+  height: 242px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  top: 12px;
+  left: -62px;
+  border-radius: 0px 190px 160px 0px / 0px 160px 130px 0px;
+  transform: rotate(-10deg) skew(14deg);
+  box-shadow: 5px 1px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.wingLeft-2 {
+  width: 340px;
+  height: 130px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  border-radius: 120px 244px 0px 0px / 30px 150px 0px 0px;
+  box-shadow: 6px -4px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.wingLeft-3 {
+  width: 70px;
+  height: 80px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  bottom: 30px;
+  left: -1px;
+}
+
+.wingRight-1 {
+  width: 180px;
+  height: 242px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  top: 12px;
+  right: -62px;
+  border-radius: 190px 0px 0px 160px / 160px 0px 0px 130px;
+  transform: rotate(10deg) skew(-14deg);
+  box-shadow: -5px -1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wingRight-2 {
+  width: 340px;
+  height: 130px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  bottom: 30px;
+  RIGHT: 60px;
+  border-radius: 244px 120px 0px 0px / 150px 30px 0px 0px;
+  box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wingRight-3 {
+  width: 70px;
+  height: 80px;
+  background: rgba(46, 244, 237, 0.5);
+  background: #000;
+  position: absolute;
+  bottom: 30px;
+  right: -1px;
+}
